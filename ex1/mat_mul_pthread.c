@@ -123,7 +123,7 @@ int main(int argc, const char *argv[])
             param_array[i].m_b = matrix_b;
             param_array[i].m_r = result;
             param_array[i].rows = num_rows_per_thread;
-            creation_flag = pthread_create(&thread[i], NULL, worker, (void *)&param_array[i]);
+            creation_flag = pthread_create(&thread[i], &attr, worker, (void *)&param_array[i]);
         }
 
         for (i = 0; i < num_threads; i++)

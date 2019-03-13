@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 serial_version = [0.004, 0.055, 10.185, 720.354, 1284.211]
 
 # results from pthread version of matrix multiplication with 4 threads and size of matrices: 10, 100, 1000, 10000, 20000, 30000, 40000, 50000, ...
-pthread_version = [0.115, 0.088, 2.821, 169.455, 495.213]
+pthread_version = [0.008, 0.011, 7.081, 169.455, 495.213]
 
 matrix_sizes = ('10', '100', '1000', '10000', '20000')
 x_pos = np.arange(len(serial_version))
